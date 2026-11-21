@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Corsair Headset Battery</title>
+  <style>
+    :root { color-scheme: dark; font: 13px "Segoe UI", sans-serif; background: #25272b; color: #f1f1f1; }
+    body { margin: 0; padding: 16px; }
+    h1 { margin: 0 0 16px; font-size: 15px; font-weight: 600; }
+    label { display: block; margin: 16px 0 7px; color: #ddd; }
+    select, input[type="range"] { width: 100%; }
+    select { box-sizing: border-box; padding: 7px; color: #f4f4f4; background: #34373d; border: 1px solid #50545c; border-radius: 4px; }
+    .size-row { display: flex; align-items: center; justify-content: space-between; }
+    .color-row { display: flex; align-items: center; justify-content: space-between; }
+    input[type="color"] { width: 46px; height: 30px; padding: 2px; background: #34373d; border: 1px solid #50545c; border-radius: 4px; }
+    .effects { display: flex; gap: 16px; margin-top: 16px; }
+    .effects label { display: flex; align-items: center; gap: 6px; margin: 0; }
+    output { color: #b9dfff; font-variant-numeric: tabular-nums; }
+    .hint { margin-top: 18px; color: #a5a8ad; line-height: 1.45; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <h1>Corsair Headset Battery</h1>
+  <label for="displayMode">Display style</label>
+  <select id="displayMode">
+    <option value="text">Percentage text</option>
+    <option value="battery">Battery with percentage</option>
+    <option value="icons">Charge level icons</option>
+  </select>
+
+  <div id="textSizeSection">
+    <div class="size-row">
+      <label for="fontSize">Text size</label>
+      <output id="fontSizeLabel" for="fontSize">28 px</output>
+    </div>
+    <input id="fontSize" type="range" min="12" max="44" step="1" value="28">
+  </div>
+
+  <div id="statusSizeSection">
+    <div class="size-row">
+      <label for="statusFontSize">ON/OFF label size</label>
+      <output id="statusFontSizeLabel" for="statusFontSize">18 px</output>
+    </div>
+    <input id="statusFontSize" type="range" min="10" max="32" step="1" value="18">
+  </div>
+
+  <div id="fontFamilySection">
+    <label for="fontFamily">Font</label>
+    <select id="fontFamily">
+      <option value="Segoe UI">Segoe UI</option>
+    </select>
+  </div>
+
+  <div id="fontColorSection">
+    <div class="color-row">
+      <label for="fontColor">Percentage color</label>
+      <input id="fontColor" type="color" value="#ffffff">
+    </div>
+    <div class="color-row">
+      <label for="statusFontColor">ON/OFF label color</label>
+      <input id="statusFontColor" type="color" value="#ffffff">
+    </div>
+  </div>
+
+  <div class="effects" id="fontEffectsSection" aria-label="Text effects">
+    <label><input id="fontBold" type="checkbox"> Bold</label>
+    <label><input id="fontItalic" type="checkbox"> Italic</label>
+    <label><input id="fontUnderline" type="checkbox"> Underline</label>
+  </div>
+
+  <p class="hint">Choose separate colors for the percentage and ON/OFF label. Bold, italic, and underline apply to both. Both size controls are measured in pixels on the 128 × 128 key image.</p>
+  <script src="inspector.js"></script>
+</body>
+</html>
