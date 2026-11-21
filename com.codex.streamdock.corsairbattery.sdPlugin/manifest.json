@@ -1,0 +1,35 @@
+{
+  "Actions": [
+    {
+      "UUID": "com.codex.streamdock.corsairbattery.level",
+      "Icon": "images/battery.png",
+      "Name": "Corsair Headset Battery",
+      "Tooltip": "Shows the battery percentage for a Corsair HS70 Pro Wireless headset",
+      "Controllers": ["Keypad", "Information", "SecondaryScreen"],
+      "States": [
+        {
+          "Image": "images/battery.png",
+          "Title": "--%",
+          "ShowTitle": false
+        }
+      ],
+      "Settings": { "displayMode": "text", "fontSize": 28, "statusFontSize": 18, "fontFamily": "Segoe UI", "fontColor": "#FFFFFF", "statusFontColor": "#FFFFFF", "fontBold": false, "fontItalic": false, "fontUnderline": false },
+      "PropertyInspectorPath": "propertyInspector/index.html",
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": false
+    }
+  ],
+  "Author": "Codex",
+  "Category": "System",
+  "CategoryIcon": "images/battery.png",
+  "CodePathWin": "plugin/index.js",
+  "Description": "Displays the Corsair HS70 Pro Wireless battery level.",
+  "Icon": "images/battery.png",
+  "Name": "Corsair Headset Battery",
+  "Nodejs": { "Version": "20" },
+  "OS": [{ "Platform": "windows", "MinimumVersion": "10" }],
+  "SDKVersion": 1,
+  "Software": { "MinimumVersion": "3.10.188.226" },
+  "URL": "https://github.com/SaifAqqad/corsair_battery_level",
+  "Version": "1.4.0"
+}
