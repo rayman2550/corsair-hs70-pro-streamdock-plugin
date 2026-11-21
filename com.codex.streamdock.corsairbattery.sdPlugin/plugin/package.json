@@ -1,0 +1,15 @@
+{
+  "name": "streamdock-corsair-headset-battery",
+  "version": "1.4.0",
+  "private": true,
+  "description": "StreamDock plugin for Corsair HS70 Pro Wireless battery level",
+  "main": "index.js",
+  "dependencies": {
+    "@napi-rs/canvas": "^1.2.0",
+    "node-hid": "^3.1.0",
+    "ws": "^8.18.0"
+  },
+  "optionalDependencies": {
+    "@napi-rs/canvas-win32-x64-msvc": "1.2.0"
+  }
+}
