@@ -11,13 +11,26 @@ An unofficial Windows plugin that reads the battery level and wireless connectio
 - **Text styling:** bold, italic, and underline.
 - **Small-display rendering:** the key image is rendered at 128 × 128 pixels.
 
-## Download and install
+## How to install
 
-1. Download the latest ZIP from [Releases](https://github.com/rayman2550/corsair-hs70-pro-streamdock-plugin/releases/latest).
-2. Extract the ZIP.
-3. Run install.ps1, or copy the included .sdPlugin folder to `%APPDATA%\HotSpot\StreamDock\plugins\`.
-4. Restart Stream Dock and add **Corsair Headset Battery** to a key.
-5. Open the key settings to choose a display style and adjust the font and colors.
+### Recommended: use the included installer
+
+1. Download the ZIP from [the latest release](https://github.com/rayman2550/corsair-hs70-pro-streamdock-plugin/releases/latest).
+2. In File Explorer, right-click the ZIP and choose **Extract All**.
+3. Open the extracted folder, then open `com.codex.streamdock.corsairbattery.sdPlugin`.
+4. Right-click `install.ps1` and choose **Run with PowerShell**. The installer copies the plugin into your Stream Dock plugins folder under your Windows user profile; administrator rights should not be needed.
+5. Restart Stream Dock.
+6. Drag **Corsair Headset Battery** onto a key. Select the key to open its settings and choose a display style, font, colors, text sizes, and styling.
+
+### Manual installation
+
+1. Extract the release ZIP.
+2. Copy the entire `com.codex.streamdock.corsairbattery.sdPlugin` folder to `%APPDATA%\HotSpot\StreamDock\plugins\`. Do not copy only the files inside it.
+3. Restart Stream Dock and add **Corsair Headset Battery** to a key.
+
+### Uninstall
+
+Close Stream Dock, delete `com.codex.streamdock.corsairbattery.sdPlugin` from `%APPDATA%\HotSpot\StreamDock\plugins\`, then reopen Stream Dock.
 
 ## Requirements
 
