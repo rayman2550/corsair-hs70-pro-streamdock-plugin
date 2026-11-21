@@ -59,3 +59,10 @@ Close Stream Dock, delete `com.codex.streamdock.corsairbattery.sdPlugin` from `%
 ## Disclaimer
 
 This plugin was coded with the help of AI. It is an unofficial community project and is not affiliated with or endorsed by Corsair, MiraBox, or AJAZZ. Please review and test it with your own setup before relying on it.
+
+
+## Source code and development
+
+The editable plugin files are in [`com.codex.streamdock.corsairbattery.sdPlugin/`](com.codex.streamdock.corsairbattery.sdPlugin/). The repository includes the plugin code, settings interface, manifest, icons, notices, and dependency manifests/lockfile. It leaves out `node_modules`; the [release ZIP](https://github.com/rayman2550/corsair-hs70-pro-streamdock-plugin/releases/latest) includes the bundled dependencies for installation.
+
+To modify the plugin, clone or download this repository, install dependencies from `plugin/package.json` with pnpm in the `com.codex.streamdock.corsairbattery.sdPlugin/plugin/` folder, then edit the files under `plugin/` or `propertyInspector/`. The ready-to-install release is packaged separately from this editable source tree.
