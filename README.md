@@ -33,7 +33,9 @@ An unofficial Windows plugin that reads the battery level and wireless connectio
 
 ## Screenshots
 
-Screenshots of the display styles and settings panel will be added here.
+<img width="548" height="822" alt="1" src="https://github.com/user-attachments/assets/c363d8e6-0bbd-4048-bd84-293b5a42d605" />
+<img width="568" height="806" alt="2" src="https://github.com/user-attachments/assets/212135e6-461d-49c0-8d68-5e52b172dfea" />
+<img width="562" height="814" alt="3" src="https://github.com/user-attachments/assets/82e7f748-376c-4261-90d3-3d5f8e54e53c" />
 
 ## Credits
 
